@@ -1,38 +1,404 @@
-.App {
+*{
+  /* background-color: #f4f4f4; */
+  padding:0px;
+  margin:0px;
+  scroll-behavior: smooth;
+
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+
+.navigation{
+  padding:5px;
+  padding-bottom: 15px;
+  background-color: #f9c49a;
+
+}
+
+
+
+.navigation ul li a{
+  text-decoration: none;
+  color:#7c3c21;
+
+
+}
+
+.navigation .search{
+  height:20px;
+}
+
+
+
+.navigation ul li{
+  list-style: none;
+  display: inline-block;
+  padding-left: 50px;
+
+}
+
+
+.logo{
+  margin-top: 10px;
+}
+
+.navigation .links{
+  float: right;
+  margin-right: 5%;
+  padding:4px;
+  margin-top: -28px;;
+
+}
+
+
+.services{
+  background-color: #f9c49a;
+  height:110vh;
+}
+
+
+
+.container {
+  background-color: #f9c49a;
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform-origin: left top;
+  transform: skewY(-5deg);
+  color:#7c3c21;
+  padding-top:20px;
+
+
+}
+
+
+
+
+.container h1{
+  transform:skewY(5deg);
+  padding-left: 36%;
+  color:#7c3c21;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: fantasy;
+}
+
+.flex-container{
+  transform: skewY(5deg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.card {
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+}
+
+.card{
+  width:300px;
+  margin-left: 5%;
+  margin-top: 20px;
+  align-items: center;
+
+
+}
+
+.card:nth-child(1){
+  border-right: 1px solid #ec823a;
+
+}
+
+.card:nth-child(2){
+  border-right: 1px solid #ec823a;
+
+}
+
+.card h2{
+  transform: skewY(-5deg);
+  padding-bottom: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card p{
+  padding:0px 20%;
+  transform: skewY(-5deg);
+  letter-spacing:0.02em ;
+  word-spacing:0.1em;
+  text-align: center;
+
+
+
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.services .service_image{
+  height:150px;
+  transform: skewY(-5deg);
+  margin-left: 60px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+.services .background{
+  height:300px;
+  width:100%;
+}
+
+.arrivals .book-image{
+  height:150px;
+  text-align: center;
+}
+
+
+.arrivals{
+  height:100vh;
+  background-color:#7c3c21;
+  color:#f9c49a;
+  z-index: -1;
+}
+
+
+.arrivals .arrival-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding:0px 10%;
+  justify-content: space-around;
+  padding-top: 60px;
+  }
+
+.arrival-card{
+  border:1px solid black;
+  border-radius: 10px;
+  width:200px;
+  height:42vh;
+  margin:10px;
+  padding:5px;
+  background-color: #f9c49a;
+  color:#7c3c21;
+}
+
+.arrivals h1{
+  text-align: center;
+  padding:10px 0px;
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: fantasy;
+}
+
+.arrival-card img{
+  margin-left: 14%;
+
+}
+
+.titleandprice{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:20px 0px;
+}
+
+
+.arrival-card .buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.arrival-card button{
+  width:48%;
+  height:5vh;
+  background: transparent;
+  border:2px solid black;
+  border-radius: 10px;
+  margin:10px 0px;
+}
+
+
+.arrivals .gotocart{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.arrivals .gotocart button{
+  padding:5px;
+  margin-left: 40%;
+  width:15%;
+  height:40px;
+  font-family: fantasy;
+  background: transparent;
+  border:1px solid white;
+  border-radius: 15px;
+  color:#f9c49a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* About Page */
+
+
+.about{
+  display: flex;
+  height:100vh;
+  background-color:#f9c49a;
+  color:#7c3c21;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+
+}
+
+
+.content{
+  width:50%;
+
+
+
+}
+
+.inner{
+  padding-left: 15%;
+  padding-top: 20vh;
+}
+
+.inner h1{
+  padding:20px 0px;
+  letter-spacing: 0.07px;
+}
+
+
+
+.content:nth-child(1){
+  padding-right: 5%;
+}
+
+.content p{
+  font-size: 20px;
+  word-spacing: 0.2em;
+  text-align: left;
+  line-height: 25px;
+
+}
+
+.about img{
+  height:70%;
+  padding-left: 15%;
+  padding-top: 8%;
+}
+
+
+/* Contact page */
+.contact_us{
+  height:70vh;
+  background: black;
+  color:#e5e5e5;
+}
+
+
+.left{
+  float: left;
+  width:50%;
+  height:70vh;
+}
+
+.left li{
+  padding:3px;
+}
+
+.right{
+  float:right;
+  width:49%;
+  height:70vh;
+
+}
+
+
+
+.left .card-container{
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.left .contact-card h3{
+  padding:10px;
+  color:white;
+  font-size: 20px;
+  width:100%;
+}
+
+
+.left .contact-card{
+  height:25vh;
+  width:22%;
+  line-height:20px;
+  letter-spacing: 0.05em;
+  color:#dbcbbd;
+}
+
+
+.contact-card ul{
+  list-style: none;
+  padding:10px;
+  padding-left: 20px;
+
+}
+
+
+.contact-card h2{
+  font-weight: 400;
+  width:200px;
+  padding: 10px;
+}
+
+
+.contact-card p{
+  padding-left: 10px;
+}
+
+.right .form-container{
+  margin-top: 4%;
+  height:60vh;
+  border-left:1px solid #e5e5e5;
+
+}
+
+.right .form{
+  height:30vh;
+  width:50%;
+  margin-left: 15%;
+  margin-top: 5%;
+
+}
+
+.form input{
+  background: transparent;
+  border:none;
+  border-bottom: 1px solid #e5e5e5;
+  padding:10px;
+  margin:10px;
+}
+
+
+.right h3{
+  text-align: center;
+  width:30%;
+  margin-left:15%;
+  padding:10px;
+  color:white;
+  font-size: 20px;
+
 }
