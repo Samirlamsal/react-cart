@@ -31,6 +31,17 @@ button:hover{
   height:20px;
 }
 
+.navigation button{
+  background: #0073cf;
+  border:0px solid black;
+  padding:2px 10px;
+  color:#d6daeb;
+  font-family:fantasy;
+  border-radius: 0px;
+  height:30px;
+  width:120px;
+}
+
 
 
 .navigation ul li{
@@ -163,10 +174,11 @@ button:hover{
 
 
 .arrivals{
-  height:100vh;
+  min-height:100vh;
   background-color:#7c3c21;
   color:#f9c49a;
-  z-index: -1;
+  z-index: 1;
+  padding: 5%;
 }
 
 
@@ -182,7 +194,7 @@ button:hover{
 .arrival-card{
   border:1px solid black;
   border-radius: 10px;
-  width:200px;
+  width:250px;
   height:42vh;
   margin:10px;
   padding:5px;
@@ -230,6 +242,7 @@ button:hover{
 .arrivals .gotocart{
   align-items: center;
   margin-top: 50px;
+
 }
 
 .arrivals .gotocart button{
@@ -400,5 +413,79 @@ button:hover{
   padding:10px;
   color:white;
   font-size: 20px;
+
+}
+
+
+/* Cart page */
+
+
+
+.cart{
+  min-height: 100vh;
+
+}
+
+.cart .continueshopping{
+  padding:10px;
+  margin:10px 40px;
+
+}
+
+.cart .continueshopping button{
+  padding:5px 20px;
+  background: transparent;
+  margin-top: 20px;
+  border:1px solid black;
+  margin-left: 5px;
+}
+
+
+.cart ul{
+  display: flex;
+  flex-direction: column;
+  margin:-15px 70px;
+  list-style: none;
+  line-height: 25px;
+
+}
+
+hr{
+  margin:10px;
+  color:#F0F0F0;
+}
+
+.cart .checkout{
+  margin-bottom:15px;
+  width: 170px;
+}
+
+.cart .checkout button{
+  padding:5px 20px;
+  background: transparent;
+  margin-top: 20px;
+  border:1px solid black;
+  margin-left: 5px;
+  width:165px;
+}
+
+
+.box-element-2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.box-element-2 .cart-row{
+  border:1px solid #F0F0F0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding:5px;
+}
+
+.cart img{
+  height:70px;
+  margin-left: 70px;
 
 }

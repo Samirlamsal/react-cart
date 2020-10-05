@@ -3,12 +3,15 @@ import Services from '../components/services';
 import Arrival from '../components/new_arrivals';
 import About_us from '../components/about_us';
 import Contact_us from '../components/contact_us';
+import Navigation from '../components/navig';
 
 
 function Home(){
 
   return(
     <>
+    <Navigation about='About'/>
+
     <div className="services">
     <img className="background" src="/service_images/background1.jpg"></img>
 

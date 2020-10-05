@@ -1,13 +1,15 @@
 import React from 'react';
 import Book_data from './products';
 import Store from '../store/store'
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
+
 
 
 function Arrival(){
+
   const dispatch=()=>{
   Store.dispatch({type:'INCREMENT'})
-  console.log(dispatch.type)
+  console.log(Store.getState())
   }
   return(
     <>
