@@ -65,6 +65,14 @@ button:hover{
 }
 
 
+.navigation input{
+  border:none;
+  border-bottom: 1px solid red;
+  background: transparent;
+  padding:2px;
+  width:130px;
+  }
+
 .services{
   background-color: #f9c49a;
   height:110vh;

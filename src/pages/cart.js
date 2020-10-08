@@ -21,7 +21,7 @@ function Cart(){
 
   return(
     <>
-    <Navigation/>
+    <Navigation gotostorebutton=<button className="gotostore">Go to Store</button>/>
 
     <div className="cart">
         <div className="box-element">

@@ -2,20 +2,25 @@ import {createStore} from 'redux';
 
 // Reducer
 
-function cart_items(state=1, action){
+const initialCount={
+  cart_item : 0
+}
+
+
+function cart_items(state, action){
   switch(action.type){
     case 'INCREMENT':
-      return state + 1
+      return {cart_item:state.cart_item + 1}
     case 'DECREMENT':
-      return state - 1
+      return {cart_item:state.cart_item + 1}
     case 'NEUTRALIZE':
-       return state = 0
+       return {cart_item:0}
     default:
       return state
   }
 }
 
-let Store = createStore(cart_items)
+let Store = createStore(cart_items, initialCount)
 
 
 

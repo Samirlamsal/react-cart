@@ -10,7 +10,7 @@ function Home(){
 
   return(
     <>
-    <Navigation about='About'/>
+    <Navigation about='About' gotostorebutton=<button className="gotostore">Go to Store</button>/>
 
     <div className="services">
     <img className="background" src="/service_images/background1.jpg"></img>

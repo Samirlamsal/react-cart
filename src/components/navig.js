@@ -11,9 +11,9 @@ import store from '../store/store';
 
 function Navigation(props){
   // const counter = store.subscribe(()=>store.getState())
-  // console.log(counter)
   // var counter = store.getState()
-  var counter = useSelector(state => state.cart_items)
+
+  var counter = useSelector(state => state.cart_item)
 
 
 
@@ -23,11 +23,11 @@ function Navigation(props){
         <li><h2><Link to="/">Company Logo</Link></h2></li>
       </ul>
       <ul className="links">
-        <li className="gotostorebutton"><Link to="/store"><button className="gotostore">Go to Store</button></Link></li>
+        <li className="gotostorebutton"><Link to="/store">{props.gotostorebutton}</Link></li>
 
         <li><a href="#about">{props.about}</a></li>
         <li><Link onClick={()=>scroll.scrollToBottom()}>Contact Us</Link></li>
-        <li><Link to="cart"><img className="search" src="./service_images/cart.png"></img>{counter}</Link></li>
+        <li><Link to="cart"><img className="search" src="./service_images/cart.png"></img> {counter}</Link></li>
       </ul>
     </div>
   )
